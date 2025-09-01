@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1>Patrimonium</h1>
+      <h1 className={"text-3xl font-bold underline"}>Patrimonium</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           App count is {count}
