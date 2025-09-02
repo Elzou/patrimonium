@@ -16,9 +16,6 @@ function App() {
 
     return (
         <div role="document">  {/* vérifier signification */}
-            {/* <h1 className={"text-3xl font-bold underline"}>Patrimonium</h1> */}
-            {/* Exemple Tailwind */}
-
             <Header />
 
             <main role="main">
