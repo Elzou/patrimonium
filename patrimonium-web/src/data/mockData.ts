@@ -3,22 +3,28 @@ import type {Fabric} from "../types/Fabric";
 import type {Review} from "../types/Review";
 
 export const mockPattern: Pattern = {
-    id: "1",
+    id: "aloha",
     title: "Robe Aloha",
-    creator: "Apolline Patterns",
-    description: "Une robe estivale facile à coudre, avec plusieurs variantes.",
-    fabrics: ["Viscose", "Coton"],
-    sizes: "34-48",
+    designer: "Apolline Patterns",
+    coverUrl: "https://placehold.co/560x420",
+    gallery: [
+        "https://placehold.co/80x60",
+        "https://placehold.co/80x60",
+        "https://placehold.co/80x60",
+    ],
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla.",
+    recommendedFabrics: ["Viscose", "Coton"],
+    sizes: "34–48",
     fabricQuantity: "1,8m → 3,5m",
-    images: ["/images/aloha-robe.jpg", "/images/aloha-details.jpg"],
 };
 
 export const mockFabrics: Fabric[] = [
-    { id: "f1", name: "Viscose fleurie", brand: "Lise Tailor", image: "/images/viscose1.jpg" },
-    { id: "f2", name: "Coton imprimé", brand: "Atelier Brunette", image: "/images/viscose2.jpg" },
+    { id: "f1", name: "Viscose fleurie", brand: "Lise Tailor", imageUrl: "/images/viscose1.jpg" },
+    { id: "f2", name: "Coton imprimé", brand: "Atelier Brunette", imageUrl: "/images/viscose2.jpg" },
 ];
 
 export const mockReviews: Review[] = [
-    { id: "r1", author: "Passepoil De Chat", rating: 5, comment: "Super patron, bien expliqué !" },
-    { id: "r2", author: "Couture Addict", rating: 4, comment: "Très joli rendu, mais taille un peu grand." },
+    { id: "r1", author: "Passepoil De Chat", rating: 5, content: "Super patron, bien expliqué !" },
+    { id: "r2", author: "Couture Addict", rating: 4, content: "Très joli rendu, mais taille un peu grand." },
 ];
